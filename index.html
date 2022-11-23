@@ -20,9 +20,9 @@
 <body>
     <div id="app">
         <button @click="getRandomEmail">Genara Email </button>
-        <ul v-for="(emailObj, i) in arrEmails">
-            <li >{{ emailObj }}</li>
-        </ul>
+        <ol>
+            <li v-for="(emailObj, i) in arrEmails" style="margin-top: 10px;">{{ emailObj }}</li>
+        </ol>
     </div>
 </body>
 </html>
